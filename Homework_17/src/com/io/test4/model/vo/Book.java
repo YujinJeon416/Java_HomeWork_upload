@@ -25,17 +25,17 @@ import java.util.Calendar;
 public class Book implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	private String title;
-	private String author;
-	private int price;
-	private Calendar dates;
-	private double discountRate;
+	private String title;            // title:String  //도서명
+	private String author;           //author:String //저자
+	private int price;               //price:int //가격
+	private Calendar dates;          //dates:Calendar    //출판날짜
+	private double discountRate;     //discountRate:double   //할인율
 	
-	public Book() {
+	public Book() {                 
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Book(String title, String author, int price, Calendar dates, double discountRate) {
+	public Book(String title, String author, int price, Calendar dates, double discountRate) { 
 		super();
 		this.title = title;
 		this.author = author;
@@ -43,7 +43,7 @@ public class Book implements Serializable{
 		this.dates = dates;
 		this.discountRate = discountRate;
 	}
-	public String getTitle() {
+	public String getTitle() {                 //Setters ans Getters 작성
 		return title;
 	}
 	public void setTitle(String title) {
@@ -74,7 +74,7 @@ public class Book implements Serializable{
 		this.discountRate = discountRate;
 	}
 	@Override
-	public String toString() {
+	public String toString() {                                           //toString():String     //Override: 날짜에 포맷 적용함 ("yyyy'년' MM'월' dd'일 출간')
 		String year = String.valueOf(dates.get(Calendar.YEAR));
 		String month = String.valueOf(dates.get(Calendar.MONTH));
 		String day = String.valueOf(dates.get(Calendar.DATE));
