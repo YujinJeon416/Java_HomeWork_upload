@@ -45,7 +45,7 @@ public class TestMyNote {
 	                    mn.fileOpen();
 	                    break;
 	                case 3:
-	                    mn.fileEdit();
+	                    mn.filefileAppend();
 	                    break;
 	                case 4:
 	                    System.out.println("프로그램을 종료합니다.");
