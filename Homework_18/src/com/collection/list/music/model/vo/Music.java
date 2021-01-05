@@ -46,8 +46,9 @@ public class Music {
 	// 필드출력용 투스트링 오버라이딩
 	@Override
 	public String toString() {
-		return "Music [title=" + title + ", singer=" + singer + "]";
+		return title + "\t\t" + singer;
 	}
+	
 	
 	
 
