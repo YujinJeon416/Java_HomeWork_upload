@@ -114,7 +114,7 @@ public class MusicMenu {
 //	+ inputMusic() : Music
 	public Music inputMusic() {
 		
-		System.out.print("변경할 곡명을 입력하세요 : ");
+		System.out.print("변경할 곡명을 입력하세요 : ");    //변경할 곡명과 대체할 곡명으로 나누고 싶은데 모르겠음 ㅠㅠ 
 		String title = sc.nextLine();
 		System.out.print("변경할 가수를 입력하세요 : ");
 		String singer = sc.nextLine();
