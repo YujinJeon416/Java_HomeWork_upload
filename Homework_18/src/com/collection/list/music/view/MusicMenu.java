@@ -73,16 +73,27 @@ public class MusicMenu {
 	
 
 
-
 //	a. 리스트 출력메소드
 //	+ printList(List<Music>) : void
-	public void printList(List<Music> mm) {
-		
-		for(Music m : mm) {
-			if(m == null) break;
-			System.out.println(m);
+	private void printList(List<Music> mm) {
+		System.out.println("==========================================");
+		if(!mm.isEmpty()) {
+			System.out.println("곡명\t\t\t가수");
+			System.out.println("------------------------------------");
+	
+			//1.for(index)
+			//2.iterator
+			//3.foreach
+			for(Music m : mm)
+				System.out.println(m);
 		}
+		else {
+			System.out.println("찾으시는 곡이 없습니다.");
+		}
+		System.out.println("------------------------------------\n");
 	}
+	
+	
 	
 	
 	
