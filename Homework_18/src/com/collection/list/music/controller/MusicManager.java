@@ -181,9 +181,7 @@ public class MusicManager {
 		
 		return mList;
 		
-		//1. 이름오름차순
-//		Comparator<Student> comp = new StudentNameAscending();
-//		Collections.sort(list, comp);
+
 		
 	}
 	
